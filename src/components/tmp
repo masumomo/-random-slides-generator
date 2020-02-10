@@ -1,0 +1,14 @@
+  <div className="instruction">
+          <Box label="How to use it" padding="10px" margin="5px">
+            <Text>Something.....</Text>
+          </Box>
+        </div>
+        <div className="generate-form">
+          <Checkbox
+            label="Run auto"
+            defaultValue="I got checked!"
+            defaultChecked
+          />
+          <TextInput placeholder="3" centerPlaceholder width="20px" />
+          <span>minutes</span>
+        </div>
