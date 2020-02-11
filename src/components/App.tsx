@@ -61,7 +61,7 @@ const App = () => {
         return (
           <>
             <TitleBar
-              title="CCC generator"
+              title="Random Slides Generator"
               controls
               onCloseClick={() => console.log("Close window")} //Close browser
               onMinimizeClick={() => alert("Sorry!")} //Nope
