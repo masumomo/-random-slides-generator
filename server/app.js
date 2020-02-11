@@ -5,6 +5,7 @@ const { buildSchema } = require("graphql");
 const graphqlHTTP = require("express-graphql");
 const knex = require("knex")({
   client: "pg",
+  database: process.env.DATABASE_URL,
   connection:
     process.env.DATABASE_URL ||
     `postgres://${process.env.USER}@127.0.0.1:5432/random_slides_generator`,
