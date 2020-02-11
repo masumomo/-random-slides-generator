@@ -2,6 +2,7 @@
   "name": "random-slides-generator",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:9000",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -11,21 +12,36 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/react-redux": "^7.1.7",
+    "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "font-picker-react": "^3.5.0",
+    "graphql": "^14.6.0",
+    "graphql-knex-resolver": "^0.0.0",
+    "knex": "^0.20.9",
+    "moment": "^2.24.0",
+    "pg": "^7.18.1",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-desktop": "^0.3.9",
     "react-dom": "^16.12.0",
     "react-redux": "^7.1.3",
     "react-scripts": "3.3.1",
+    "react-timer-hook": "^2.0.0",
     "redux": "^4.0.5",
+    "sqlite3": "^4.1.1",
     "typescript": "~3.7.2"
   },
   "scripts": {
+    "start": "node server",
     "hack": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "migrate": "knex migrate:latest --knexfile server/knexfile.js",
+    "seed": "knex seed:run --knexfile server/knexfile.js",
+    "rollback": "knex migrate:rollback --knexfile server/knexfile.js"
   },
   "eslintConfig": {
     "extends": "react-app"

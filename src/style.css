@@ -1,5 +1,9 @@
 .App {
   height: 100%;
+  margin-top: 0px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-notification {
@@ -9,14 +13,39 @@
   margin-right: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.presentation {
+  text-align: center;
 }
 
 .slides {
   text-align: center;
+  display: flex;
+  transition: transform 1s;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.slide img {
+  height: 95%;
+  max-width: 100%;
+
+  /* border: 1px solid red; */
+}
+
+.title-slide h2,
+.conclusion-slide h2 {
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

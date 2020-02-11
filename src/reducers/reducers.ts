@@ -1,7 +1,7 @@
 import { createStore } from "redux";
 
 const initialState = {
-  photos: [], //TODO
+  photos: [""], //TODO
   currentView: "AllPhotos", //TODO
   selectedPhoto: ""
 };
