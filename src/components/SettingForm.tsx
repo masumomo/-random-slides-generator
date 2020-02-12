@@ -28,7 +28,7 @@ export const SettingForm = () => {
           <Form.Label>Length</Form.Label>
           <Form.Row>
             <Col sm={3}>
-              <Form.Check type="checkbox" label="Auto play" />
+              <Form.Check type="checkbox" label="Auto play" checked />
             </Col>
             <Col>
               <Form.Check

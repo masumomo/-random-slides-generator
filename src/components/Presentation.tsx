@@ -72,6 +72,7 @@ export const Presentation = (props: any) => {
           goBackToMain={props.goBackToMain}
           expiryTimestamp={time}
           length={props.length}
+          isAutoRun={props.isAutoRun}
           moveNextSlide={moveNextSlide}
           movePreviousSlide={movePreviousSlide}
           currentSlidePage={currentSlidePage}

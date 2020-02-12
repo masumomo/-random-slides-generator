@@ -68,7 +68,7 @@ const App = () => {
               onMaximizeClick={() => console.log("Mazimize window")} //Nope
               onResizeClick={() => alert("Sorry!")} //Nope
             />
-            <Box padding="20px" margin="5px" height="100%">
+            <Box padding="20px" margin="10px" height="100%">
               <Form.Group controlId="formGroupSlideTitle">
                 <Form.Label>Title</Form.Label>
                 <Form.Row>
@@ -105,6 +105,7 @@ const App = () => {
                       type="checkbox"
                       label="Auto play"
                       ref={inputAutoRunEl}
+                      checked
                     />
                   </Col>
                   <Col ref={inputLengthEl}>
@@ -129,6 +130,7 @@ const App = () => {
                       name="formHorizontalRadios"
                       id="formHorizontalRadios3"
                       disabled
+                      onChange={() => {}}
                     />
                   </Col>
                 </Form.Row>
@@ -168,6 +170,7 @@ const App = () => {
             title={title}
             length={length * 60}
             goBackToMain={goBackToMain}
+            isAutoRun={isAutoRun}
           />
         );
       default:

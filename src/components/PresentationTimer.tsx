@@ -38,7 +38,10 @@ export const PresentationTimer = (props: any) => {
       "slideChangeTiming[currentSlide] :",
       slideChangeTiming[props.currentSlidePage - 1]
     );
-    if (slideChangeTiming[props.currentSlidePage - 1] < timer) {
+    if (
+      props.isAutoRun &&
+      slideChangeTiming[props.currentSlidePage - 1] < timer
+    ) {
       console.log("changeSlide :", timer);
       props.moveNextSlide();
     }
