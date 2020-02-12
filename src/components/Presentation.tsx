@@ -44,26 +44,26 @@ export const Presentation = (props: any) => {
       transform: `translateX(-${(currentSlidePage - 1) * screenWidthSite}px)`
     });
   };
-  useEffect(() => {
-    document.body.addEventListener(
-      "click",
-      e => {
-        e.preventDefault();
-        console.log("click :");
-        moveNextSlide();
-      },
-      false
-    );
-    //  Promise.all([
-    //   fetch("https://source.unsplash.com/random?sig=1"),
-    //   fetch("https://source.unsplash.com/random?sig=2"),
-    //   fetch("https://source.unsplash.com/random?sig=3"),
-    //   fetch("https://source.unsplash.com/random?sig=4")
-    // ]).then(result => {
-    //   setImages(result);
-    //   console.log("images1 :", images);
-    // });
-  }, [currentSlidePage]);
+  // useEffect(() => {
+  // document.body.addEventListener(
+  //   "click",
+  //   e => {
+  //     e.preventDefault();
+  //     console.log("click :");
+  //     moveNextSlide();
+  //   },
+  //   false
+  // );
+  //  Promise.all([
+  //   fetch("https://source.unsplash.com/random?sig=1"),
+  //   fetch("https://source.unsplash.com/random?sig=2"),
+  //   fetch("https://source.unsplash.com/random?sig=3"),
+  //   fetch("https://source.unsplash.com/random?sig=4")
+  // ]).then(result => {
+  //   setImages(result);
+  //   console.log("images1 :", images);
+  // });
+  // }, [currentSlidePage]);
 
   return (
     <>

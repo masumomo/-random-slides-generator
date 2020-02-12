@@ -63,7 +63,7 @@ const App = () => {
             <TitleBar
               title="Random Slides Generator"
               controls
-              onCloseClick={() => console.log("Close window")} //Close browser
+              onCloseClick={() => window.close()} //Close browser
               onMinimizeClick={() => alert("Sorry!")} //Nope
               onMaximizeClick={() => console.log("Mazimize window")} //Nope
               onResizeClick={() => alert("Sorry!")} //Nope
@@ -97,7 +97,7 @@ const App = () => {
                   </Col>
                 </Form.Row>
               </Form.Group>
-              <Form.Group controlId="formGroupPassword">
+              <Form.Group controlId="formGroupLength">
                 <Form.Label>Length</Form.Label>
                 <Form.Row>
                   <Col sm={3}>
@@ -105,7 +105,7 @@ const App = () => {
                       type="checkbox"
                       label="Auto play"
                       ref={inputAutoRunEl}
-                      checked
+                      defaultChecked={true}
                     />
                   </Col>
                   <Col ref={inputLengthEl}>
@@ -143,9 +143,11 @@ const App = () => {
                   if (inputRandomTitleEl.current!.checked) {
                     //Create random title here
                     console.log("titles :", titles);
-                    const randomIndex = Math.floor(
+                    let randomIndex = Math.floor(
                       Math.random() * (titles.length - 1)
                     );
+                    //For demo!
+                    randomIndex = 6;
                     console.log("randomIndex :", randomIndex);
                     setTitle(titles[randomIndex]);
                   } else {
