@@ -146,8 +146,8 @@ const App = () => {
                     let randomIndex = Math.floor(
                       Math.random() * (titles.length - 1)
                     );
-                    //For demo!
-                    randomIndex = 6;
+                    // For demo!
+                    // randomIndex = 6;
                     console.log("randomIndex :", randomIndex);
                     setTitle(titles[randomIndex]);
                   } else {
