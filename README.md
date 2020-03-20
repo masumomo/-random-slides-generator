@@ -40,5 +40,5 @@ Have fan!!
 
 ## Acknowledgements
 
-- Presentation slides images made by [Unsplash API(https://unsplash.com/) The world's most powerful free photo API.
+- Presentation slides images made by [Unsplash API](https://unsplash.com/) The world's most powerful free photo API.
 - Presentation titles made by [Blog Title Generator](https://unsplash.com/) By Entering a keyword, generate a list of good title ideas.
