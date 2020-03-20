@@ -28,6 +28,16 @@ yarn start
 
 Have fan!!
 
+## Todo (contribution is welcome)
+
+- More random titles or generate random titles!
+- Length of presentation option
+- Write tests...
+- Toolbar button function
+- Make 'title' slide and 'In conclusion' slide fancy (Applying random style, and so on)
+- Make code readable
+- Remove any type (TypeScript)
+
 ## Acknowledgements
 
 - Presentation slides images made by [Unsplash API(https://unsplash.com/) The world's most powerful free photo API.
